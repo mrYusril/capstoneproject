@@ -505,17 +505,17 @@ def norways_cafe():
 
         choice = input("Enter the menu number you want to run: ").lower().strip()
 
-        if choice == 'display drink':
+        if choice == '1':
             display_drinks_filter()
-        elif choice == 'display food':
+        elif choice == '2':
             display_foods_filter()
-        elif choice == 'buy drink':
+        elif choice == '3':
             buy_drinks()
-        elif choice == 'buy food':
+        elif choice == '4':
             buy_foods()
-        elif choice == 'admin':
+        elif choice == '5':
             admin()
-        elif choice == 'exit':
+        elif choice == '6':
             print("\nThank you for visiting the Norway's Cafe!")
             break
         else:
