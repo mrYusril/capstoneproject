@@ -36,7 +36,7 @@ This project is to help the developer(me) for understanding the fundamentals of 
    - Printing the Bill: The application stores what customer order consist information such as name, Qty (quantity), price, and the total price. The application prints the Bill just like in a real-life scenario
 
   **4. Inventory Management**
-  - Update value: The application can update values from menu list such as stock 
+  - Update value: The application can update values from menu list such as stock and price using Admin System. Beside that after orders take placed, the value (stock) of food or drink item, will also be updated
   
       
 
