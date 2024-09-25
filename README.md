@@ -92,7 +92,7 @@ food_bill = 0        # To sum all of the food orders total price
 ## Defining the Functions
 Before running the application, we need to define each function in our code
 
-## a)Main Menu
+## a) Main Menu
 The main menu of the application is called function norways_cafe(). The function shows several choices such as display drink or food menu, buy drink or food menu, admin system menu, and exit program
 
 ### 1. norways_cafe()
