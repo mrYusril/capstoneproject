@@ -91,10 +91,42 @@ food_bill = 0        # To sum all of the food orders total price
 ```
 ## Drinks Function
 In this application, there are several drinks-related functions such as:
- 1. display_drinks() --> Function to display the list of drinks menu
+ 1. display_drinks()  1     --> Function to display the list of drinks menu
  2. display_drinks_filter() -->  Function to display the list of drinks menu in a filtered way, Coffee or Non-Coffee
- 3. add_drinks --> Function to add an item to the current drinks menu
- 4. remove_drinks --> Function to add an item to the current drinks menu
+ 3. add_drinks              --> Function to add an item to the current drinks menu
+ 4. remove_drinks           --> Function to add an item to the current drinks menu
+
+### Def display_drinks()
+```
+# Function to display the list of drinks menu
+def display_drinks(category_filter=None):
+    # Define the widths of each column based on the longest data in the list
+    id_width = 5
+    name_width = 35
+    stock_width = 10
+    price_width = 10
+    
+    # Calculate the total width of the menu title
+    total_width = id_width + name_width + stock_width + price_width
+    title_menu  = "Welcome to Norway's Cafe"
+
+    # Print the menu title
+    print("=" * total_width)
+    print(title_menu.center(total_width))
+    print("=" * total_width)
+
+    # Print the header
+    print(f"{'ID':<{id_width}}{'Drink':<{name_width}}{'Stock':<{stock_width}}{'Price':<{price_width}}")
+    print("-" * (id_width + name_width + stock_width + price_width))
+
+    # Print each drink item, applying the category filter 
+    for drinks_id, drinks_info in drinks_menu.items():
+        if category_filter is None or drinks_info['category'] == category_filter:
+            name = drinks_info['name']
+            stock = drinks_info['stock']
+            price = drinks_info['price']
+            print(f"{drinks_id:<{id_width}}{name:<{name_width}}{stock:<{stock_width}}{price:>{price_width},.2f}")
+```
 
 
 
