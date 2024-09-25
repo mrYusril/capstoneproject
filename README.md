@@ -83,11 +83,18 @@ drinks_menu = {
 We need to define global variables to help us store multiple orders.
 ```
 # Declare global order lists and total bills
-drink_orders = [] # To store all of the drink orders
-food_orders = [] # To store all of the food orders
-drink_bill = 0 # To sum all of the drink orders total price
-food_bill = 0 # To sum all of the food orders total price
+
+drink_orders = []    # To store all of the drink orders
+food_orders = []     # To store all of the food orders
+drink_bill = 0       # To sum all of the drink orders total price
+food_bill = 0        # To sum all of the food orders total price
 ```
+## Drinks Function
+In this application, there are several drinks-related functions such as:
+ 1. display_drinks() --> Function to display the list of drinks menu
+ 2. display_drinks_filter() -->  Function to display the list of drinks menu in a filtered way, Coffee or Non-Coffee
+ 3. add_drinks --> Function to add an item to the current drinks menu
+ 4. remove_drinks --> Function to add an item to the current drinks menu
 
 
 
