@@ -79,7 +79,7 @@ drinks_menu = {
 }
 ```
 
-## Defining the Variable
+## Defining the Variables
 We need to define global variables to help us store multiple orders.
 ```python
 # Declare global order lists and total bills
@@ -89,14 +89,53 @@ food_orders = []     # To store all of the food orders
 drink_bill = 0       # To sum all of the drink orders total price
 food_bill = 0        # To sum all of the food orders total price
 ```
+## Defining the Functions
+Before running the application, we need to define each function in our code
+
+## a)Main Menu
+The main menu of the application is called function norways_cafe(). The function shows several choices such as display drink or food menu, buy drink or food menu, admin system menu, and exit program
+
+### 1. norways_cafe()
+```python
+def norways_cafe():
+    while True:
+        print("\nWelcome to the Norway's Cafe")
+        print("Menu List:")
+        print("1. Displays the Drinks Menu")
+        print("2. Displays the Foods Menu")
+        print("3. Buy drinks")
+        print("4. Buy foods")
+        print("5. Admin")
+        print("6. Exit Program")
+
+        choice = input("Enter the menu number you want to run: ").lower().strip()
+
+        if choice == '1':
+            display_drinks_filter()
+        elif choice == '2':
+            display_foods_filter()
+        elif choice == '3':
+            buy_drinks()
+        elif choice == '4':
+            buy_foods()
+        elif choice == '5':
+            admin()
+        elif choice == '6':
+            print("\nThank you for visiting the Norway's Cafe!")
+            break
+        else:
+            print("\nInvalid choice. Please try again.")
+```
+
 ## Drinks Function
 In this application, there are several drinks-related functions such as:
  1. display_drinks()  1     --> Function to display the list of drinks menu
  2. display_drinks_filter() -->  Function to display the list of drinks menu in a filtered way, Coffee or Non-Coffee
- 3. add_drinks              --> Function to add an item to the current drinks menu
- 4. remove_drinks           --> Function to add an item to the current drinks menu
+ 3. add_drinks()            --> Function to add an item to the current drinks menu
+ 4. remove_drinks()         --> Function to add an item to the current drinks menu
+ 5. update_drinks()         --> Function to update values of an item (stock and price)
 
-### Def display_drinks()
+### 1. display_drinks()
 ```python
 # Function to display the list of drinks menu
 def display_drinks(category_filter=None):
@@ -126,6 +165,39 @@ def display_drinks(category_filter=None):
             stock = drinks_info['stock']
             price = drinks_info['price']
             print(f"{drinks_id:<{id_width}}{name:<{name_width}}{stock:<{stock_width}}{price:>{price_width},.2f}")
+```
+
+### display_drinks_filter()
+```python
+# Function to ask the customer for filtering the menu
+def display_drinks_filter():
+    display_drinks()  # Display all drinks initially
+
+    # Ask the customer if they want to filter the menu
+    while True:
+        filter_choice = input("\nWould you like to filter the menu by category?: (yes/no)").lower()
+        if filter_choice == "yes":
+            print("\nCategories avalaible:")
+            print("1. Coffee")
+            print("2. Non-Coffee")
+
+            category_choice = input("Please choose a category (coffee/non coffee)").lower().strip()
+
+            if category_choice == "coffee":
+                display_drinks("Coffee")
+                print("\nDisplaying Coffee Menu")
+            elif category_choice == "non coffee":
+                display_drinks("Non-Coffee")
+                print("\nDisplaying Non-Coffee Menu")
+            else:
+                print("\nInvalid choice. Please try again.")
+            break
+        elif filter_choice == "no":
+            print("\nDisplaying full menu...")
+            break
+        else:
+            print("Invalid input. Please enter 'yes' or 'no'")
+```
 
 
 
