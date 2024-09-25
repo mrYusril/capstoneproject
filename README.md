@@ -14,7 +14,7 @@ If there is a suggestion or recommendation, I'm very open to have a discussion w
 
 Also, I hope my project can give you something useful for your programming journey
 
-# A Menu-Ordering App, norways_cafe()
+# A Cafe Menu-Ordering App, norways_cafe()
 This project is to help the developer(me) for understanding the fundamentals of Python Prgoramming especially in CRUD (Create, Read, Update, Delete) concept by build an menu-ordering application. This application has several follwoing features:
 
 ## Description
