@@ -79,6 +79,18 @@ drinks_menu = {
 }
 ```
 
+## Defining the Variable
+We need to define global variables to help us store multiple orders.
+```
+# Declare global order lists and total bills
+drink_orders = [] # To store all of the drink orders
+food_orders = [] # To store all of the food orders
+drink_bill = 0 # To sum all of the drink orders total price
+food_bill = 0 # To sum all of the food orders total price
+```
+
+
+
 
 
 
