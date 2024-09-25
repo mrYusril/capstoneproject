@@ -126,7 +126,7 @@ def display_drinks(category_filter=None):
             stock = drinks_info['stock']
             price = drinks_info['price']
             print(f"{drinks_id:<{id_width}}{name:<{name_width}}{stock:<{stock_width}}{price:>{price_width},.2f}")
-```
+
 
 
 
