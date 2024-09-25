@@ -51,7 +51,7 @@ You can see and download my flowchart below
 
 First, we need to list our drinks and foods menu in form of dictionary that consist of key (1,2,3,...) and values (name, stock, and price). In this README I will only show  the drinks menu as an example,
 
-```
+```python
 # Listing Drinks Menu
 drinks_menu = {
     # Coffee
@@ -81,7 +81,7 @@ drinks_menu = {
 
 ## Defining the Variable
 We need to define global variables to help us store multiple orders.
-```
+```python
 # Declare global order lists and total bills
 
 drink_orders = []    # To store all of the drink orders
@@ -97,7 +97,7 @@ In this application, there are several drinks-related functions such as:
  4. remove_drinks           --> Function to add an item to the current drinks menu
 
 ### Def display_drinks()
-```
+```python
 # Function to display the list of drinks menu
 def display_drinks(category_filter=None):
     # Define the widths of each column based on the longest data in the list
