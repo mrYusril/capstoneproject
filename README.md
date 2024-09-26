@@ -167,7 +167,7 @@ def display_drinks(category_filter=None):
             print(f"{drinks_id:<{id_width}}{name:<{name_width}}{stock:<{stock_width}}{price:>{price_width},.2f}")
 ```
 
-### display_drinks_filter()
+### 2. display_drinks_filter()
 ```python
 # Function to ask the customer for filtering the menu
 def display_drinks_filter():
@@ -198,6 +198,29 @@ def display_drinks_filter():
         else:
             print("Invalid input. Please enter 'yes' or 'no'")
 ```
+
+### 3. add_drinks()
+```python
+# Function to add a drinks to the menu list
+def add_drinks():
+    name = input("Enter the name of the drinks: ")
+    stock = int(input(f"Enter the stock for {name}: "))
+    price = int(input(f"Enter the price for {name}: "))
+    category = input(f"Enter the category for {name}: ")
+    
+    # Check if drinks already exists
+    for drinks in drinks_menu.values():
+        if drinks["name"].lower() == name.lower():
+            print(f"{name} already exists in the menu list.")
+            return
+    # Find the next available key
+    new_key = max(drinks_menu.keys()) + 1 
+    # Add the drinks to the menu list
+    drinks_menu[new_key] = {"name": name, "stock": stock, "price": price, "category": category}
+    print(f"\n{name} has been added successfully.")
+```
+### 3. add_drinks()
+
 
 
 
