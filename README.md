@@ -2,7 +2,7 @@
 
 Hello there,
 
-This is my first Readme file for my **Capstone Project Module 1** from Purwadhika which I'm very excited to share. This project present the fundamentals of CRUD application, my first application made with Visual Code using Python language to write it. The application is a menu-ordering app in a cafe which I named, Norways_Cafe().
+This is my first Readme file for my **Capstone Project Module 1** which I'm very excited to share. This project present the fundamentals of CRUD application, my first application made with Visual Code using Python language to write it. The application is a menu-ordering app in a cafe which I named, Norways_Cafe().
 
 In this project, I've implemented several features such as:
  - Create: Adding an item (drink/food) to the menu list
