@@ -1,75 +1,77 @@
 # Section Listing the Menu
+
 # Listing Drinks Menu
 drinks_menu = {
     # Coffee
-    1: {"name": "Es Kopi Susu Gula Aren", "stock": 50, "price": 18000, "category": "Coffee"},
-    2: {"name": "Cappucino", "stock": 35, "price": 16000, "category": "Coffee"},
-    3: {"name": "Caffe Latte", "stock": 25, "price": 17000, "category": "Coffee"},
-    4: {"name": "Mochacino", "stock": 25, "price": 17000, "category": "Coffee"},
-    5: {"name": "Espresso", "stock": 50, "price": 13000, "category": "Coffee"},
-    6: {"name": "Caramel Latte", "stock": 25, "price": 17000, "category": "Coffee"},
-    7: {"name": "Americano", "stock": 40, "price": 15000, "category": "Coffee"},
-    8: {"name": "Caramel Latte", "stock": 25, "price": 17000, "category": "Coffee"},
-    9: {"name": "Hazelnut Latte", "stock": 25, "price": 17000, "category": "Coffee"},
+    1: {"name": "Es Kopi Susu Gula Aren","product_code": "CO001", "stock": 50, "price": 18000, "category": "Coffee", "supplier": "Calf Coffee Industry"},
+    2: {"name": "Cappucino", "product_code": "CO002", "stock": 35, "price": 16000, "category": "Coffee", "supplier": "Calf Coffee Industry"},
+    3: {"name": "Caffe Latte", "product_code": "CO003","stock": 25, "price": 17000, "category": "Coffee", "supplier": "Calf Coffee Industry"},
+    4: {"name": "Mochacino","product_code": "CO004", "stock": 25, "price": 17000, "category": "Coffee", "supplier": "Calf Coffee Industry"},
+    5: {"name": "Espresso","product_code": "CO005", "stock": 50, "price": 13000, "category": "Coffee", "supplier": "Calf Coffee Industry"},
+    6: {"name": "Caramel Latte","product_code": "CO006", "stock": 25, "price": 17000, "category": "Coffee", "supplier": "Kisaten Cafe and Roastery"},
+    7: {"name": "Americano", "product_code": "CO007", "stock": 40, "price": 15000, "category": "Coffee", "supplier": "Kisaten Cafe and Roastery"},
+    8: {"name": "Caramel Latte", "product_code": "CO008", "stock": 25, "price": 17000, "category": "Coffee", "supplier": "Kisaten Cafe and Roastery"},
+    9: {"name": "Hazelnut Latte","product_code": "CO009", "stock": 25, "price": 17000, "category": "Coffee", "supplier": "Kisaten Cafe and Roastery"},
     # Non-Coffee
-    10: {"name": "Matcha Latte", "stock": 30, "price": 18000, "category": "Non-Coffee"},
-    11: {"name": "Taro Latte", "stock": 30, "price": 18000, "category": "Non-Coffee"},
-    12: {"name": "Vanilla Latte", "stock": 27, "price": 19000, "category": "Non-Coffee"},
-    13: {"name": "Matcha Frappe", "stock": 27, "price": 22000, "category": "Non-Coffee"},
-    14: {"name": "Cookies N Cream Frappe", "stock": 25, "price": 22000, "category": "Non-Coffee"},
-    15: {"name": "Butterscotch Sea Salt Latte", "stock": 25, "price": 22000, "category": "Non-Coffee"},
-    16: {"name": "Buttercream Tiramisu Latte", "stock": 25, "price": 22000, "category": "Non-Coffee"},
-    17: {"name": "Classic Tea", "stock": 40, "price": 12000, "category": "Non-Coffee"},
-    18: {"name": "Earl Grey Tea", "stock": 40, "price": 12000, "category": "Non-Coffee"},
-    19: {"name": "Lemon Tea", "stock": 40, "price": 12000, "category": "Non-Coffee"},
-    20: {"name": "Mineral Water", "stock": 60, "price": 5000, "category": "Non-Coffee"}
+    10: {"name": "Matcha Latte", "product_code": "NC001","stock": 30, "price": 18000, "category": "Non-Coffee", "supplier": "Levian Cafe"},
+    11: {"name": "Taro Latte", "product_code": "NC002", "stock": 30, "price": 18000, "category": "Non-Coffee", "supplier": "Levian Cafe"},
+    12: {"name": "Vanilla Latte", "product_code": "NC003", "stock": 27, "price": 19000, "category": "Non-Coffee", "supplier": "Levian Cafe"},
+    13: {"name": "Matcha Frappe",  "product_code": "NC004", "stock": 27, "price": 22000, "category": "Non-Coffee", "supplier": "Levian Cafe"},
+    14: {"name": "Cookies N Cream Frappe", "product_code": "NC005", "stock": 25, "price": 22000, "category": "Non-Coffee", "supplier": "Levian Cafe"},
+    15: {"name": "Butterscotch Sea Salt Latte", "product_code": "NC006", "stock": 25, "price": 22000, "category": "Non-Coffee", "supplier": "Levian Cafe"},
+    16: {"name": "Buttercream Tiramisu Latte", "product_code": "NC007", "stock": 25, "price": 22000, "category": "Non-Coffee", "supplier": "Levian Cafe"},
+    17: {"name": "Classic Tea", "product_code": "NC008", "stock": 40, "price": 12000, "category": "Non-Coffee", "supplier": "Beanhof Teashop"},
+    18: {"name": "Earl Grey Tea", "product_code": "NC009", "stock": 40, "price": 12000, "category": "Non-Coffee", "supplier": "Beanhof Teashop"},
+    19: {"name": "Lemon Tea", "product_code": "NC010", "stock": 40, "price": 12000, "category": "Non-Coffee", "supplier": "Beanhof Teashop"},
+    20: {"name": "Mineral Water", "product_code": "NC011", "stock": 60, "price": 5000, "category": "Non-Coffee", "supplier": "Beanhof Teashop"}
 }
+# You can use logging for key identifier
 
 # Listing Foods Menu
 foods_menu = {
     # Main_Course 
-    1: {"name": "Chicken 'Tender' Burger", "stock": 40, "price": 23000, "category": "Main Course"},
-    2: {"name": "Classic Beef Burger", "stock": 38, "price": 26000, "category": "Main Course"},
-    3: {"name": "Western Beefbac Cheeseburger", "stock": 32, "price": 33000, "category": "Main Course"},
-    4: {"name": "Memphis BBQ Burger", "stock": 32, "price": 33000, "category": "Main Course"},
-    5: {"name": "Nasi Ayam Sambal Matah", "stock": 45, "price": 23000, "category": "Main Course"},
-    6: {"name": "Nasi Ayam Sambal Kemangi", "stock": 45, "price": 23000, "category": "Main Course"},
-    7: {"name": "Japanese Curry Rice", "stock": 42, "price": 24000, "category": "Main Course"},
-    8: {"name": "Pesto Rice Chicken Katsu", "stock": 42, "price": 25000, "category": "Main Course"},
-    9: {"name": "Tomato Mozzarella Rice", "stock": 40, "price": 25000, "category": "Main Course"},
-    10: {"name": "Butter Rice Creamy Katsu", "stock": 60, "price": 25000, "category": "Main Course"},
-    11: {"name": "Creamy Tomatto Mozzarella Rize", "stock": 55, "price": 25000, "category": "Main Course"},
-    12: {"name": "Broccoli and Cheese", "stock": 55, "price": 24000, "category": "Main Course"},
-    13: {"name": "Tomahawk Steak", "stock": 25, "price": 60000, "category": "Main Course"},
-    14: {"name": "Tenderloin Steak", "stock": 28, "price": 42000, "category": "Main Course"},
-    15: {"name": "Striploin Steak", "stock": 28, "price": 42000, "category": "Main Course"},
-    16: {"name": "Crispy Chicken Steak", "stock": 35, "price": 32000, "category": "Main Course"},
-    17: {"name": "Chicken Cordon Bleu", "stock": 32, "price": 38000, "category": "Main Course"},
-    18: {"name": "Meat Lover Pizza", "stock": 25, "price": 55000, "category": "Main Course"},
-    19: {"name": "Super Supreme Pizza", "stock": 25, "price": 55000, "category": "Main Course"},
-    20: {"name": "Fish N Chip", "stock": 25, "price": 35000, "category": "Main Course"},
+    1: {"name": "Chicken 'Tender' Burger", "product_code": "MC001", "stock": 40, "price": 23000, "category": "Main Course", "supplier": "Tasty Patty Inc."},
+    2: {"name": "Classic Beef Burger", "product_code": "MC002", "stock": 38, "price": 26000, "category": "Main Course", "supplier": "Tasty Patty Inc."},
+    3: {"name": "Western Beefbac Cheeseburger", "product_code": "MC003", "stock": 32, "price": 33000, "category": "Main Course", "supplier": "Tasty Patty Inc."},
+    4: {"name": "Memphis BBQ Burger",  "product_code": "MC004", "stock": 32, "price": 33000, "category": "Main Course", "supplier": "Tasty Patty Inc."},
+    5: {"name": "Nasi Ayam Sambal Matah", "product_code": "MC005", "stock": 45, "price": 23000, "category": "Main Course", "supplier": "Ayam Ayaman Resto"},
+    6: {"name": "Nasi Ayam Sambal Kemangi", "product_code": "MC006", "stock": 45, "price": 23000, "category": "Main Course", "supplier": "Ayam Ayaman Resto"},
+    7: {"name": "Japanese Curry Rice", "product_code": "MC007", "stock": 42, "price": 24000, "category": "Main Course", "supplier": "Ayam Ayaman Resto"},
+    8: {"name": "Pesto Rice Chicken Katsu", "product_code": "MC008", "stock": 42, "price": 25000, "category": "Main Course", "supplier": "Ayam Ayaman Resto"},
+    9: {"name": "Tomato Mozzarella Rice", "product_code": "MC009", "stock": 40, "price": 25000, "category": "Main Course", "supplier": "Ayam Ayaman Resto"},
+    10: {"name": "Butter Rice Creamy Katsu", "product_code": "MC010", "stock": 60, "price": 25000, "category": "Main Course", "supplier": "Ayam Ayaman Resto"},
+    11: {"name": "Creamy Tomatto Mozzarella Rize", "product_code": "MC011", "stock": 55, "price": 25000, "category": "Main Course", "supplier": "Ayam Ayaman Resto"},
+    12: {"name": "Broccoli and Cheese",  "product_code": "MC012", "stock": 55, "price": 24000, "category": "Main Course", "supplier": "Ayam Ayaman Resto"},
+    13: {"name": "Tomahawk Steak", "product_code": "MC013", "stock": 25, "price": 60000, "category": "Main Course", "supplier": "Fasya's Meatshop and Frozenfood"},
+    14: {"name": "Tenderloin Steak", "product_code": "MC014", "stock": 28, "price": 42000, "category": "Main Course", "supplier": "Fasya's Meatshop and Frozenfood"},
+    15: {"name": "Striploin Steak", "product_code": "MC015", "stock": 28, "price": 42000, "category": "Main Course", "supplier": "Fasya's Meatshop and Frozenfood"},
+    16: {"name": "Crispy Chicken Steak", "product_code": "MC016", "stock": 35, "price": 32000, "category": "Main Course", "supplier": "Fasya's Meatshop and Frozenfood"},
+    17: {"name": "Chicken Cordon Bleu", "product_code": "MC017", "stock": 32, "price": 38000, "category": "Main Course", "supplier": "Fasya's Meatshop and Frozenfood"},
+    18: {"name": "Meat Lover Pizza", "product_code": "MC018", "stock": 25, "price": 55000, "category": "Main Course", "supplier": "Fasya's Meatshop and Frozenfood"},
+    19: {"name": "Super Supreme Pizza", "product_code": "MC019", "stock": 25, "price": 55000, "category": "Main Course", "supplier": "Fasya's Meatshop and Frozenfood"},
+    20: {"name": "Fish N Chip", "product_code": "MC020", "stock": 25, "price": 35000, "category": "Main Course", "supplier": "Fasya's Meatshop and Frozenfood"},
     # Snacks_Salty
-    21: {"name": "Mix Platter", "stock": 42, "price": 28000, "category": "Salty Snack"},
-    22: {"name": "Chicken Wingz", "stock": 38, "price": 22000, "category": "Salty Snack"},
-    23: {"name": "French Fries", "stock": 42, "price": 18000, "category": "Salty Snack"},
-    24: {"name": "Potato Wedges", "stock": 44, "price": 18000, "category": "Salty Snack"},
-    25: {"name": "Pok Pok Chicken", "stock": 40, "price": 24000, "category": "Salty Snack"},
+    21: {"name": "Mix Platter", "product_code": "SA001", "stock": 42, "price": 28000, "category": "Salty Snack", "supplier": "Fasya's Meatshop and Frozenfood"},
+    22: {"name": "Chicken Wingz", "product_code": "SA002", "stock": 38, "price": 22000, "category": "Salty Snack", "supplier": "Fasya's Meatshop and Frozenfood"},
+    23: {"name": "French Fries", "product_code": "SA003", "stock": 42, "price": 18000, "category": "Salty Snack", "supplier": "Fasya's Meatshop and Frozenfood"},
+    24: {"name": "Potato Wedges", "product_code": "SA004", "stock": 44, "price": 18000, "category": "Salty Snack", "supplier": "Fasya's Meatshop and Frozenfood"},
+    25: {"name": "Pok Pok Chicken", "product_code": "SA005", "stock": 40, "price": 24000, "category": "Salty Snack", "supplier": "Fasya's Meatshop and Frozenfood"},
     # Snacks_Sweet
-    26: {"name": "Deep Fried Oreo", "stock": 60, "price": 18000, "category": "Sweet Snack"},
-    27: {"name": "Ice Cream Pancake", "stock": 26, "price": 24000, "category": "Sweet Snack"},
-    28: {"name": "Chocolate Waffle", "stock": 35, "price": 24000, "category": "Sweet Snack"},
-    29: {"name": "Cromboloni", "stock": 40, "price": 26000, "category": "Sweet Snack"},
-    30: {"name": "Almond Croissant", "stock": 42, "price": 24000, "category": "Sweet Snack"},
+    26: {"name": "Deep Fried Oreo", "product_code": "SW001", "stock": 60, "price": 18000, "category": "Sweet Snack", "supplier": "Kisaten Cafe and Roastery"},
+    27: {"name": "Ice Cream Pancake", "product_code": "SW002", "stock": 26, "price": 24000, "category": "Sweet Snack", "supplier": "Kisaten Cafe and Roastery"},
+    28: {"name": "Chocolate Waffle", "product_code": "SW003", "stock": 35, "price": 24000, "category": "Sweet Snack", "supplier": "Kisaten Cafe and Roastery"},
+    29: {"name": "Cromboloni", "product_code": "SW004", "stock": 40, "price": 26000, "category": "Sweet Snack", "supplier": "Kisaten Cafe and Roastery"},
+    30: {"name": "Almond Croissant", "product_code": "SW005", "stock": 42, "price": 24000, "category": "Sweet Snack", "supplier": "Kisaten Cafe and Roastery"},
 }
 
 #========================================================================================================================
 #========================================================================================================================
 
 # Declare global order lists and total bills
-drink_orders = []
-food_orders = []
-drink_bill = 0
-food_bill = 0
+drink_orders = [] # To store all of the drink orders
+food_orders = [] # To store all of the food orders
+drink_bill = 0 # To sum all of the drink orders total price
+food_bill = 0 # To sum all of the food orders total price
 
 # Section Drinks Function
 # Function to display the list of drinks menu
@@ -134,9 +136,11 @@ def display_drinks_filter():
 # Function to add a drinks to the menu list
 def add_drinks():
     name = input("Enter the name of the drinks: ")
+    product_code = input("Enter the product code: ")
     stock = int(input(f"Enter the stock for {name}: "))
     price = int(input(f"Enter the price for {name}: "))
     category = input(f"Enter the category for {name}: ")
+    supplier = input("Enter the company name of the supplier: ")
     
     # Check if drinks already exists
     for drinks in drinks_menu.values():
@@ -146,7 +150,7 @@ def add_drinks():
     # Find the next available key
     new_key = max(drinks_menu.keys()) + 1 
     # Add the drinks to the menu list
-    drinks_menu[new_key] = {"name": name, "stock": stock, "price": price, "category": category}
+    drinks_menu[new_key] = {"name": name, "product_code": product_code, "stock": stock, "price": price, "category": category, "supplier": supplier}
     print(f"\n{name} has been added successfully.")
 
 # Function to remove a drinks from the menu list based on its name
@@ -343,9 +347,11 @@ def display_foods_filter():
 # Function to add a foods to the menu list
 def add_foods():
     name = input("Enter the name of the foods: ")
+    product_code = input("Enter the product code: ")
     stock = int(input(f"Enter the stock for {name}: "))
     price = int(input(f"Enter the price for {name}: "))
     category = input(f"Enter the category for {name}: ")
+    supplier = input("Enter the company name of the supplier: ")
     
     # Check if foods already exists
     for foods in foods_menu.values():
@@ -355,7 +361,7 @@ def add_foods():
     # Find the next available key
     new_key = max(foods_menu.keys()) + 1 if foods_menu else 1
     # Add the foods to the menu list
-    foods_menu[new_key] = {"name": name, "stock": stock, "price": price, "category": category}
+    foods_menu[new_key] = {"name": name, "product_code": product_code, "stock": stock, "price": price, "category": category, "supplier": supplier}
     print(f"\n{name} has been added successfully.")
 
 # Function to remove a foods from the menu list based on its name
